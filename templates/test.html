@@ -1,0 +1,21 @@
+<html>
+<header>
+  <title>混雑度</title>
+</header>
+<body>
+  <table>
+    <tr>
+      <th>place_id</th>
+      <th>時間</th>
+      <th>混雑度</th>
+    </tr>
+    {% for a in message %}
+        <tr>
+          <td>{{ a.place_id }}</td>
+          <td>{{ a.then_time }}</td>
+          <td>{{ a.crowd }}</td>
+        </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
